@@ -52,7 +52,7 @@ public class CustomJackson {
     /**
      * hashMapToObj method that fills the object with data from json
      *
-     * @param jsonHashMap a map that contains a value key, where the key is the name of the field of some object
+     * @param jsonHashMap a map that contains a key - value, where the key is the name of the field of some object
      * @param someClass a certain class into which data will be entered from JSON
      * @return String that containing json
      */
@@ -71,7 +71,7 @@ public class CustomJackson {
      * hashMapToObj method that fills the object with data from json
      *
      * @param json json that conforms to the syntax rules in the String format
-     * @return a map that contains a value key, where the key is the name of the field of some object
+     * @return a map that contains a key - value , where the key is the name of the field of some object
      */
 
     private static HashMap<String, String> jsonToHashMap(String json) {
