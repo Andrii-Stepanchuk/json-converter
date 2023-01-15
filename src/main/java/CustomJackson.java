@@ -1,8 +1,6 @@
 import lombok.SneakyThrows;
 
-import java.io.IOException;
 import java.lang.reflect.Field;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -40,6 +38,9 @@ public class CustomJackson {
     }
 
     private static HashMap<String, String> jsonToHashMap(String json) {
+        if (json.isBlank())
+            return new HashMap<>();
+
         String[] parts = json
                 .replace("\"", "")
                 .replace("{", "")
